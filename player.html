@@ -1,0 +1,71 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<body>
+
+   <div id="screen">
+      <div class="head-bar">
+         <div class="back-button">
+            <a href="songs.html">
+               <i class="material-icons">arrow_back</i>
+            </a>
+         </div>
+      </div>
+
+      <img src="images/stoney.jpg" id="playeralbumart" alt="Stoney Album Cover"/>
+
+      <div class="playerinfo">
+         <p id="songname" class="albumtitle">White Iverson</p>
+         <p class="albuminfo"><em>Stoney</em> - Post Malone</p>
+      </div>
+
+      <input type="range" id="time" value="0" min="0" max="180">
+      
+      <div>
+         <div id="lefttime">0:00</div>
+         <div id="righttime">3:00</div>
+      </div>
+
+      <div class="buttons">
+         <button onclick="prevSong()">
+            <i class="material-icons">skip_previous</i>
+         </button>
+         <button onclick="switchPlay()"">
+            <i id="playpause" class="material-icons">play_arrow</i>
+         </button>
+         <button onclick="nextSong()">
+            <i class="material-icons">skip_next</i>
+         </button>
+      </div>
+
+      <div class="volume">
+         <div>
+            <i id="volumeicon" class="material-icons">volume_down</i>
+         </div>
+         <div class="levels" id="vl0"></div>
+         <div class="levels" id="vl1"></div>
+         <div class="levels" id="vl2"></div>
+         <div class="levels" id="vl3"></div>
+         <div class="levels" id="vl4"></div>
+         <div class="levels" id="vl5"></div>
+      </div>
+      <br>
+      <br>
+      <div class="volumecontrol">
+         <button id="voldownbutton" onclick="volDown()">&mdash;</button>
+         <button id="volupbutton" onclick="volUp()">+</button>
+      </div>
+
+   </div>
+
+   <script src="ipod.js"></script>
+
+</body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
